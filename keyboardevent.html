@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+<p>Enter Your Name:</p>
+<input type="text" id="uname" onchange="myfun()" onfocus="myfocus()" onfocusout="myfocusout()">
+<script>
+function myfun()
+	{
+		var x=document.getElementById('uname');
+		x.value=x.value.toUpperCase();
+	}
+function myfocus()
+{
+document.getElementById('uname').style.background='red';
+}
+function myfocusout()
+{
+document.getElementById('uname').style.background='none';
+}	
+</script>
+</body>
+</html>

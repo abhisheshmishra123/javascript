@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+<form>
+enter first number:<input type="text" id="fnum"><br>
+enter second number:<input type="text" id="snum"><br>
+<input type="button" value="Addition" onclick="add()">
+</form>
+<p id="result"></p>
+<script>
+function add()
+{
+var num1=parseInt(document.getElementById("fnum").value);
+var num2=parseInt(document.getElementById('snum').value);
+var sum=num1+num2;
+document.getElementById('result').innerHTML="sum="+sum;
+}
+</script>
+</body>
+</html>

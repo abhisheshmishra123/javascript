@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body onload="show()">
+<script>
+function show()
+{
+alert("loading your web page");
+}
+</script>
+<button onclick="display()">click me</button>
+<button ondblclick="doubleclick()">double click to me</button><br>
+<p id="para" onmouseenter="mouseenter()" onmouseout="mouseout()">this is simple paragraph</p>
+<script>
+function display()
+{
+alert("this is click event");
+}
+function doubleclick()
+{
+alert("this is double click event in javascript");
+}
+function mouseenter()
+{
+document.getElementById('para').setAttribute('style','color:red;background-color:blue');
+}
+function mouseout()
+{
+document.getElementById('para').setAttribute('style','none');
+}
+</script>
+<h1 id="dayan" onmousedown="mousedown()" onmouseup="mouseup()">this is our first heading tag</h1>
+<script>
+function mousedown()
+{
+document.getElementById('dayan').setAttribute('style','color:white;background-color:black;text-align:center');
+}
+function mouseup()
+{
+document.getElementById('dayan').setAttribute('style','none');
+}
+</script>
+</body>
+</html>
